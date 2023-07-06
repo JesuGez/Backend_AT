@@ -1,6 +1,6 @@
 const conexion = require('../config/conexion.js');
 const { check, validationResult } = require('express-validator');
-var express = require('express') //llamamos a Express
+var express = require('express')
 const cors = require('cors');
 var rutas = express()  
 

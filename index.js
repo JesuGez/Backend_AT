@@ -16,6 +16,8 @@ app.use(function (req, res, next) {
 
 //Routes llama a los controladores
 app.use('/', require('./controller/novedadController'));
+app.use('/', require('./controller/loginController'));
+app.use('/', require('./controller/usuarioController'));
 
   // iniciamos nuestro servidor
 app.listen(port)

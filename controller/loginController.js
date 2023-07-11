@@ -13,8 +13,8 @@ rutas.post('/login', async (req, res) => {
     } catch (error) {
         console.error(error);
     }
-
-    if (!user) {
+    
+    if (!user[0]) {
         return res.status(404).json({ error: 'Usuario no encontrado' });
     }
 
